@@ -80,7 +80,8 @@ ol.refs li::before{content:"\2726";position:absolute;left:2px;top:2px;font-size:
 .pagetitle{font-size:2.1rem;padding:46px 0 0;color:var(--heading);text-shadow:0 0 16px rgba(217,164,65,.35)}
 .back{display:inline-block;margin:34px 0 60px;font-family:"Source Sans 3",sans-serif;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
 
-footer{padding:50px 0;text-align:center;font-family:"Source Sans 3",sans-serif;font-size:.8rem;color:var(--muted)}
+/* footer{padding:50px 0;text-align:center;font-family:"Source Sans 3",sans-serif;font-size:.8rem;color:var(--muted)} */
+footer{padding:50px 0;text-align:center;font-size:.8rem;color:var(--muted)}
 
 /* ---------- scroll reveal ---------- */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease}
