@@ -40,7 +40,7 @@ h1{font-size:2.7rem;font-weight:600;line-height:1.15}
 .ids a{border:1px solid var(--rule);padding:5px 11px;color:var(--muted)}
 .ids a:hover{border-color:var(--gold);color:var(--gold)}
 .namerow{display:flex;align-items:center;justify-content:space-between;gap:30px}
-.avatar{width:150px;height:150px;border-radius:50%;object-fit:cover;flex-shrink:0;
+.avatar{width:140px;height:140px;border-radius:50%;object-fit:cover;flex-shrink:0;margin-right:24px;
   border:2px solid rgba(217,164,65,.5);animation:halo 4s ease-in-out infinite}
 @keyframes halo{
   0%,100%{box-shadow:0 0 18px 3px rgba(217,164,65,.22), 0 0 48px 8px rgba(217,164,65,.08)}
