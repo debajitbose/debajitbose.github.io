@@ -30,6 +30,13 @@ nav ul a{color:var(--muted)}
 nav ul a:hover,nav ul a.active{color:var(--gold)}
 #prog{position:absolute;left:0;bottom:-1px;height:2px;width:0%;background:linear-gradient(90deg,var(--gold),var(--gold-bright));box-shadow:0 0 8px rgba(217,164,65,.7)}
 
+/* ---------- logo at the top ---------- */
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand:hover{text-decoration:none}
+.brand-logo{width:30px;height:30px;display:block;flex-shrink:0}
+.brand .name{color:var(--star)}
+.brand:hover .name{color:var(--gold)}
+
 /* ---------- header (home page) ---------- */
 header{padding:80px 0 54px;border-bottom:1px solid var(--rule)}
 h1{font-size:2.7rem;font-weight:600;line-height:1.15}
