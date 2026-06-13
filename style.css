@@ -61,6 +61,8 @@ ol.refs li::before{content:"\2726";position:absolute;left:2px;top:2px;font-size:
 .pa em{font-style:normal;color:var(--star);border-bottom:1px solid var(--rule)}
 .pm{font-family:"Source Code Pro",monospace;font-size:.76rem;color:var(--muted);margin-top:5px}
 .tag{color:var(--gold);border:1px solid rgba(217,164,65,.4);padding:1px 7px;font-size:.7rem;margin-left:6px}
+.pm a.journal{color:#9FB8FF}
+.pm a.journal:hover{color:#C9D8FF}
 
 /* ---------- timeline rows (education, awards) ---------- */
 .row{display:flex;gap:16px;margin-bottom:16px}
