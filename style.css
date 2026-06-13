@@ -1,0 +1,85 @@
+/* ============================================================
+   DEBAJIT BOSE — ACADEMIC WEBSITE STYLESHEET
+   You normally do NOT need to edit this file.
+   To change the accent colour, edit --gold and --gold-bright below.
+   ============================================================ */
+
+:root{
+  --sky:#060708;            /* page background (near-black night sky) */
+  --star:#EDEDEA;           /* main text colour */
+  --muted:#9C9E9B;          /* secondary text colour */
+  --gold:#D9A441;           /* accent */
+  --gold-bright:#FFE7B0;    /* bright accent / glow */
+  --heading:#F2DEA9;        /* glowing yellow headings */
+  --rule:rgba(237,237,234,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--sky);color:var(--star);font:400 17.5px/1.7 "STIX Two Text",serif}
+a{color:var(--gold);text-decoration:none}
+a:hover{color:var(--gold-bright)}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px}
+
+#bg{position:fixed;inset:0;z-index:-1}
+
+/* ---------- top navigation ---------- */
+nav{border-bottom:1px solid var(--rule);background:rgba(6,7,8,.82);backdrop-filter:blur(8px);position:sticky;top:0;z-index:10}
+nav .wrap{display:flex;justify-content:space-between;align-items:baseline;padding:16px 24px;position:relative;flex-wrap:wrap;gap:8px}
+nav .name{font-weight:600;font-size:1.05rem;color:var(--star)}
+nav ul{display:flex;gap:18px;list-style:none;font-family:"Source Sans 3",sans-serif;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;flex-wrap:wrap}
+nav ul a{color:var(--muted)}
+nav ul a:hover,nav ul a.active{color:var(--gold)}
+#prog{position:absolute;left:0;bottom:-1px;height:2px;width:0%;background:linear-gradient(90deg,var(--gold),var(--gold-bright));box-shadow:0 0 8px rgba(217,164,65,.7)}
+
+/* ---------- header (home page) ---------- */
+header{padding:80px 0 54px;border-bottom:1px solid var(--rule)}
+h1{font-size:2.7rem;font-weight:600;line-height:1.15}
+.affil{margin-top:14px;font-style:italic;color:var(--muted)}
+.abstract{margin-top:32px;padding:22px 26px;border-left:3px solid var(--gold);background:rgba(217,164,65,.06);font-size:1rem}
+.abstract h2{margin-bottom:12px}
+.ids{margin-top:28px;font-family:"Source Code Pro",monospace;font-size:.78rem;display:flex;flex-wrap:wrap;gap:10px}
+.ids a{border:1px solid var(--rule);padding:5px 11px;color:var(--muted)}
+.ids a:hover{border-color:var(--gold);color:var(--gold)}
+
+/* ---------- sections & headings ---------- */
+section{padding:58px 0;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:none}
+h2{font-size:1.45rem;font-weight:600;margin-bottom:8px;color:var(--heading);text-shadow:0 0 16px rgba(217,164,65,.35)}
+.secnum{color:var(--gold-bright);margin-right:10px;text-shadow:0 0 14px rgba(217,164,65,.85)}
+.seclead{color:var(--muted);font-style:italic;margin-bottom:28px}
+.viewall{font-family:"Source Sans 3",sans-serif;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase}
+
+/* ---------- reference-style lists (publications, talks, ...) ---------- */
+ol.refs{list-style:none;counter-reset:p}
+ol.refs li{counter-increment:p;position:relative;padding:0 0 24px 44px}
+ol.refs li::before{content:"["counter(p)"]";position:absolute;left:0;font-family:"Source Code Pro",monospace;font-size:.85rem;color:var(--gold-bright);text-shadow:0 0 10px rgba(217,164,65,.6)}
+.pt{font-weight:600;color:#fff}
+.pa{font-size:.95rem;color:var(--muted)}
+.pa em{font-style:normal;color:var(--star);border-bottom:1px solid var(--rule)}
+.pm{font-family:"Source Code Pro",monospace;font-size:.76rem;color:var(--muted);margin-top:5px}
+.tag{color:var(--gold);border:1px solid rgba(217,164,65,.4);padding:1px 7px;font-size:.7rem;margin-left:6px}
+
+/* ---------- timeline rows (education, awards) ---------- */
+.row{display:flex;gap:16px;margin-bottom:16px}
+.row .yr{font-family:"Source Code Pro",monospace;font-size:.8rem;color:var(--gold-bright);white-space:nowrap;margin-top:4px;text-shadow:0 0 10px rgba(217,164,65,.6);min-width:110px}
+.row b{color:#fff;font-weight:600}
+
+/* ---------- contact socials ---------- */
+.socials{display:flex;gap:14px;margin-top:22px;flex-wrap:wrap}
+.socials a{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid var(--rule);border-radius:50%;color:var(--muted)}
+.socials a:hover{border-color:var(--gold);color:var(--gold)}
+.socials svg{width:18px;height:18px;fill:currentColor}
+
+/* ---------- sub-page title ---------- */
+.pagetitle{font-size:2.1rem;padding:46px 0 0;color:var(--heading);text-shadow:0 0 16px rgba(217,164,65,.35)}
+.back{display:inline-block;margin:34px 0 60px;font-family:"Source Sans 3",sans-serif;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+
+footer{padding:50px 0;text-align:center;font-family:"Source Sans 3",sans-serif;font-size:.8rem;color:var(--muted)}
+
+/* ---------- scroll reveal ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion: reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+}
