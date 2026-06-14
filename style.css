@@ -49,7 +49,7 @@ h1{font-size:2.7rem;font-weight:600;line-height:1.15}
 .namerow{display:flex;align-items:center;justify-content:space-between;gap:30px}
 
 /* ---------- avatar ---------- */
-.avatar{width:140px;height:140px;border-radius:50%;object-fit:cover;flex-shrink:0;margin-right:24px;
+.avatar{width:150px;height:150px;border-radius:50%;object-fit:cover;flex-shrink:0;margin-right:30px;
   border:2px solid rgba(217,164,65,.5);animation:halo 4s ease-in-out infinite}
 @keyframes halo{
   0%,100%{box-shadow:0 0 18px 3px rgba(217,164,65,.22), 0 0 48px 8px rgba(217,164,65,.08)}
