@@ -78,6 +78,11 @@ ol.refs li::before{content:"["counter(p)"]";position:absolute;left:0;font-family
 ol.refs{list-style:none}
 ol.refs li{position:relative;padding:0 0 24px 36px}
 ol.refs li::before{content:"\2726";position:absolute;left:2px;top:2px;font-size:.95rem;color:var(--gold);text-shadow:0 0 8px rgba(217,164,65,.75),0 0 16px rgba(217,164,65,.35);line-height:1.3}
+/* numbered + reversed — main publications list only */
+ol.refs.pub-numbered{list-style:decimal;padding-left:34px}
+ol.refs.pub-numbered li{padding-left:8px}
+ol.refs.pub-numbered li::before{content:none}
+ol.refs.pub-numbered li::marker{color:var(--gold-bright);font-family:"Source Code Pro",monospace}
 .pt{font-weight:600;font-style:italic;color:#fff}
 .pa{font-size:.95rem;color:var(--muted)}
 /* .pa em{font-style:normal;color:var(--star);border-bottom:1px solid var(--rule)} */
