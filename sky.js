@@ -5,7 +5,6 @@
    Available: orion, virgo, scorpius, taurus, sagittarius
    Star positions come from real J2000 coordinates; sizes from
    real magnitudes; colours from real spectral types.
-   You normally do NOT need to edit this file.
    ============================================================ */
 
 (function(){
