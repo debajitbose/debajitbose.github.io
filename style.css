@@ -40,6 +40,7 @@ nav ul a:hover,nav ul a.active{color:var(--gold)}
 /* ---------- header (home page) ---------- */
 header{padding:80px 0 54px;border-bottom:1px solid var(--rule)}
 h1{font-size:2.7rem;font-weight:600;line-height:1.15}
+header h1{color:#6FC9D4;text-shadow:0 0 12px rgba(111,201,212,.55),0 0 26px rgba(111,201,212,.3)}
 .affil{margin-top:14px;font-style:italic;color:var(--muted)}
 .abstract{margin-top:32px;padding:22px 26px;border-left:3px solid var(--gold);background:rgba(217,164,65,.06);font-size:1rem}
 .abstract h2{margin-bottom:12px}
