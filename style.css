@@ -80,7 +80,7 @@ ol.refs li::before{content:"\2726";position:absolute;left:2px;top:2px;font-size:
 .pt{font-weight:600;font-style:italic;color:#fff}
 .pa{font-size:.95rem;color:var(--muted)}
 /* .pa em{font-style:normal;color:var(--star);border-bottom:1px solid var(--rule)} */
-.pa em{font-style:normal;color:#C97D8C;font-size:calc(0.95rem + 2pt);border-bottom:2px solid rgba(201,125,140,.75)}
+.pa em{font-style:normal;color:#D99AA6;border-bottom:2px solid rgba(217,154,166,.75);text-shadow:0 0 8px rgba(217,154,166,.55),0 0 18px rgba(217,154,166,.3)}
 .pm{font-family:"Source Code Pro",monospace;font-size:.76rem;color:var(--muted);margin-top:5px}
 /* .tag{color:var(--gold);border:1px solid rgba(217,164,65,.4);padding:1px 7px;font-size:.7rem;margin-left:6px}*/
 .tag{color:#8FD0A8;border:1px solid rgba(143,208,168,.45);background:rgba(143,208,168,.08);padding:1px 7px;font-size:.7rem;margin-left:6px;border-radius:3px}
