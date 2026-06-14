@@ -88,8 +88,8 @@ ol.refs li::before{content:"\2726";position:absolute;left:2px;top:2px;font-size:
 .tag-online{color:#B9A7E8;border:1px solid rgba(185,167,232,.45);background:rgba(185,167,232,.08);padding:1px 7px;font-size:.7rem;margin-left:6px;border-radius:3px}
 .pm a.journal{color:#9FB8FF}
 .pm a.journal:hover{color:#C9D8FF}
-.pm a.youtube{color:#D9756B}
-.pm a.youtube:hover{color:#E8978F}
+.pm a.youtube{color:#D99AA6}
+.pm a.youtube:hover{color:#D99AA6}
 
 /* ---------- timeline rows (education, awards) ---------- */
 .row{display:flex;gap:16px;margin-bottom:16px}
